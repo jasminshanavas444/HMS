@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  backend:
+    image: jasminshanavas/hms-backend:latest
+    ports:
+      - "8080:8080"
+
+  frontend:
+    image: jasminshanavas/hms-frontend:latest
+    ports:
+      - "3000:80"
+
+
