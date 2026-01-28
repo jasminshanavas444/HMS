@@ -24,5 +24,5 @@ app.get("/doctors", (req, res) => {
 });
 
 app.listen(8080, () => {
-  console.log("Backend running on port 8080");
+  console.log("Backend updated");
 });
