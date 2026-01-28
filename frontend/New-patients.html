@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Patients</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>New Patients</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="patient-details.html">Patient Details</a>
+    </nav>
 
-<h2>Patients List</h2>
+    <div class="container">
+        <h1>Add New Patient</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Gender</th>
-    </tr>
-  </thead>
-  <tbody id="patients"></tbody>
-</table>
+        <input type="text" id="newPatientName" placeholder="Patient Name">
+        <input type="number" id="newPatientAge" placeholder="Age">
+        <input type="text" id="newPatientCondition" placeholder="Condition">
+        <button onclick="addPatient()">Add Patient</button>
 
-<script src="script.js"></script>
+        <table id="newPatientTable">
+            <tr><th>Name</th><th>Age</th><th>Condition</th></tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-

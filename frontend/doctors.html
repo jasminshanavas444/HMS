@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Doctors</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Doctors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="patient-details.html">Patient Details</a>
+        <a href="New-patients.html">New Patients</a>
+    </nav>
 
-<h2>Doctors List</h2>
+    <div class="container">
+        <h1>Doctors</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Department</th>
-      <th>OP Time</th>
-    </tr>
-  </thead>
-  <tbody id="doctors"></tbody>
-</table>
+        <input type="text" id="doctorSearch" placeholder="Search doctor by name">
+        <button onclick="searchDoctor()">Search</button>
 
-<script src="script.js"></script>
+        <table id="doctorTable">
+            <tr><th>Name</th><th>Specialization</th></tr>
+            <tr><td>Dr. John Doe</td><td>Cardiologist</td></tr>
+            <tr><td>Dr. Jane Smith</td><td>Neurologist</td></tr>
+            <tr><td>Dr. Alice Lee</td><td>Pediatrician</td></tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
