@@ -1,13 +1,10 @@
 services:
   backend:
-    image: yourdockerhubname/hms-backend:latest
+    image: jasminshanavas/hms-backend:latest
     ports:
-      - "5000:5000"
+      - "3000:3000"
 
   frontend:
-    image: yourdockerhubname/hms-frontend:latest
+    image: jasminshanavas/hms-frontend:latest
     ports:
       - "8081:80"
-
-
-
