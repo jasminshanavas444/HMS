@@ -11,5 +11,11 @@ services:
       - "8080:80"
     depends_on:
       - backend
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html
 
 
